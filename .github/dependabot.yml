@@ -15,8 +15,6 @@ updates:
       - "dependencies"
     pull-request-branch-name:
       separator: "-"
-    reviewers:
-      - "hainish"
     versioning-strategy: auto
   - package-ecosystem: "cargo"
     directory: "/gpapi/"
@@ -32,6 +30,4 @@ updates:
       - "dependencies"
     pull-request-branch-name:
       separator: "-"
-    reviewers:
-      - "hainish"
     versioning-strategy: auto
