@@ -1,4 +1,4 @@
-target
-Cargo.lock
-.envrc
-*.swp
+/target
+/result
+.direnv/
+.pre-commit-config.yaml

@@ -107,9 +107,17 @@ impl fmt::Display for Error {
             ErrorKind::FileExists => write!(f, "File already exists"),
             ErrorKind::InvalidApp => write!(f, "Invalid app response"),
             ErrorKind::DirectoryExists => write!(f, "Directory already exists"),
-            ErrorKind::DirectoryMissing => write!(f, "Destination path provided is not a valid directory"),
-            ErrorKind::Authentication => write!(f, "Could not authenticate with Google. Please provide a new oAuth token."),
-            ErrorKind::TermsOfService => write!(f, "Must accept Google Play Terms of Service before proceeding."),
+            ErrorKind::DirectoryMissing => {
+                write!(f, "Destination path provided is not a valid directory")
+            }
+            ErrorKind::Authentication => write!(
+                f,
+                "Could not authenticate with Google. Please provide a new oAuth token."
+            ),
+            ErrorKind::TermsOfService => write!(
+                f,
+                "Must accept Google Play Terms of Service before proceeding."
+            ),
             ErrorKind::PermissionDenied => write!(f, "Cannot create file: permission denied"),
             ErrorKind::InvalidResponse => write!(f, "Invalid response from the remote host"),
             ErrorKind::LoginRequired => write!(f, "Logging in is required for this action"),

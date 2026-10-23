@@ -321,19 +321,13 @@ pub struct BuyResponse {
     #[prost(message, optional, tag = "49")]
     pub challenge: ::core::option::Option<Challenge>,
     #[prost(string, optional, tag = "50")]
-    pub add_instrument_prompt_html: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub add_instrument_prompt_html: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "51")]
     pub confirm_button_text: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "52")]
-    pub permission_error_title_text: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub permission_error_title_text: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "53")]
-    pub permission_error_message_text: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub permission_error_message_text: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(bytes = "vec", optional, tag = "54")]
     pub server_logs_cookie: ::core::option::Option<::prost::alloc::vec::Vec<u8>>,
     #[prost(string, optional, tag = "55")]
@@ -352,9 +346,7 @@ pub mod buy_response {
         #[prost(group, repeated, tag = "5")]
         pub checkoutoption: ::prost::alloc::vec::Vec<checkout_info::CheckoutOption>,
         #[prost(string, optional, tag = "10")]
-        pub deprecated_checkout_url: ::core::option::Option<
-            ::prost::alloc::string::String,
-        >,
+        pub deprecated_checkout_url: ::core::option::Option<::prost::alloc::string::String>,
         #[prost(string, optional, tag = "11")]
         pub add_instrument_url: ::core::option::Option<::prost::alloc::string::String>,
         #[prost(string, repeated, tag = "20")]
@@ -373,9 +365,7 @@ pub mod buy_response {
             #[prost(string, optional, tag = "6")]
             pub form_of_payment: ::core::option::Option<::prost::alloc::string::String>,
             #[prost(string, optional, tag = "7")]
-            pub encoded_adjusted_cart: ::core::option::Option<
-                ::prost::alloc::string::String,
-            >,
+            pub encoded_adjusted_cart: ::core::option::Option<::prost::alloc::string::String>,
             #[prost(string, optional, tag = "15")]
             pub instrument_id: ::core::option::Option<::prost::alloc::string::String>,
             #[prost(message, repeated, tag = "16")]
@@ -401,9 +391,7 @@ pub mod buy_response {
             #[prost(string, optional, tag = "45")]
             pub purchase_cookie: ::core::option::Option<::prost::alloc::string::String>,
             #[prost(string, repeated, tag = "48")]
-            pub disabled_reason: ::prost::alloc::vec::Vec<
-                ::prost::alloc::string::String,
-            >,
+            pub disabled_reason: ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
         }
     }
 }
@@ -508,9 +496,7 @@ pub struct RedeemGiftCardRequest {
     #[prost(message, optional, tag = "2")]
     pub address: ::core::option::Option<Address>,
     #[prost(string, repeated, tag = "3")]
-    pub accepted_legal_document_id: ::prost::alloc::vec::Vec<
-        ::prost::alloc::string::String,
-    >,
+    pub accepted_legal_document_id: ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "4")]
     pub checkout_token: ::core::option::Option<::prost::alloc::string::String>,
 }
@@ -570,9 +556,7 @@ pub struct AddressChallenge {
     #[prost(string, optional, tag = "1")]
     pub response_address_param: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "2")]
-    pub response_checkboxes_param: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub response_checkboxes_param: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "3")]
     pub title: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "4")]
@@ -595,33 +579,23 @@ pub struct AuthenticationChallenge {
     #[prost(int32, optional, tag = "1")]
     pub authentication_type: ::core::option::Option<i32>,
     #[prost(string, optional, tag = "2")]
-    pub response_authentication_type_param: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub response_authentication_type_param: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "3")]
-    pub response_retry_count_param: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub response_retry_count_param: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "4")]
     pub pin_header_text: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "5")]
-    pub pin_description_text_html: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub pin_description_text_html: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "6")]
     pub gaia_header_text: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "7")]
-    pub gaia_description_text_html: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub gaia_description_text_html: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "8")]
     pub gaia_footer_text_html: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(message, optional, tag = "9")]
     pub gaia_opt_out_checkbox: ::core::option::Option<FormCheckbox>,
     #[prost(string, optional, tag = "10")]
-    pub gaia_opt_out_description_text_html: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub gaia_opt_out_description_text_html: ::core::option::Option<::prost::alloc::string::String>,
 }
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Challenge {
@@ -664,13 +638,9 @@ pub struct WebViewChallenge {
     #[prost(string, optional, tag = "2")]
     pub target_url_regexp: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "3")]
-    pub cancel_button_display_label: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub cancel_button_display_label: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "4")]
-    pub response_target_url_param: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub response_target_url_param: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "5")]
     pub cancel_url_regexp: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "6")]
@@ -691,9 +661,7 @@ pub struct AddCreditCardPromoOffer {
     #[prost(string, optional, tag = "6")]
     pub no_action_description: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "7")]
-    pub terms_and_conditions_html: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub terms_and_conditions_html: ::core::option::Option<::prost::alloc::string::String>,
 }
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct AvailablePromoOffer {
@@ -947,9 +915,7 @@ pub struct BillingProfile {
     #[prost(message, repeated, tag = "1")]
     pub instrument: ::prost::alloc::vec::Vec<Instrument>,
     #[prost(string, optional, tag = "2")]
-    pub selected_external_instrument_id: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub selected_external_instrument_id: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(message, repeated, tag = "3")]
     pub billing_profile_option: ::prost::alloc::vec::Vec<BillingProfileOption>,
 }
@@ -964,9 +930,7 @@ pub struct BillingProfileOption {
     #[prost(message, optional, tag = "4")]
     pub topup_info: ::core::option::Option<TopupInfo>,
     #[prost(message, optional, tag = "5")]
-    pub carrier_billing_instrument_status: ::core::option::Option<
-        CarrierBillingInstrumentStatus,
-    >,
+    pub carrier_billing_instrument_status: ::core::option::Option<CarrierBillingInstrumentStatus>,
 }
 #[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
 pub struct CarrierBillingCredentials {
@@ -1011,9 +975,7 @@ pub struct CarrierBillingInstrumentStatus {
     #[prost(message, optional, tag = "7")]
     pub device_association: ::core::option::Option<DeviceAssociation>,
     #[prost(string, optional, tag = "8")]
-    pub carrier_support_phone_number: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub carrier_support_phone_number: ::core::option::Option<::prost::alloc::string::String>,
 }
 #[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
 pub struct CarrierTos {
@@ -1051,13 +1013,9 @@ pub struct CreditCardInstrument {
 #[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
 pub struct DeviceAssociation {
     #[prost(string, optional, tag = "1")]
-    pub user_token_request_message: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub user_token_request_message: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "2")]
-    pub user_token_request_address: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub user_token_request_address: ::core::option::Option<::prost::alloc::string::String>,
 }
 #[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
 pub struct DisabledInfo {
@@ -1134,9 +1092,7 @@ pub struct StoredValueInstrument {
 #[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
 pub struct TopupInfo {
     #[prost(string, optional, tag = "1")]
-    pub options_container_doc_id_deprecated: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub options_container_doc_id_deprecated: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "2")]
     pub options_list_url: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "3")]
@@ -1212,9 +1168,7 @@ pub struct ClientDownloadRequest {
     #[prost(string, repeated, tag = "15")]
     pub originating_packages: ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
     #[prost(message, optional, tag = "17")]
-    pub originating_signature: ::core::option::Option<
-        client_download_request::SignatureInfo,
-    >,
+    pub originating_signature: ::core::option::Option<client_download_request::SignatureInfo>,
 }
 /// Nested message and enum types in `ClientDownloadRequest`.
 pub mod client_download_request {
@@ -1381,9 +1335,7 @@ pub struct DetailsResponse {
     #[prost(string, optional, tag = "14")]
     pub user_review_url: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "17")]
-    pub post_acquire_details_stream_url: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub post_acquire_details_stream_url: ::core::option::Option<::prost::alloc::string::String>,
 }
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct DiscoveryBadge {
@@ -1465,9 +1417,7 @@ pub struct DeviceConfigurationProto {
     #[prost(string, repeated, tag = "9")]
     pub system_shared_library: ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
     #[prost(string, repeated, tag = "10")]
-    pub system_available_feature: ::prost::alloc::vec::Vec<
-        ::prost::alloc::string::String,
-    >,
+    pub system_available_feature: ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
     #[prost(string, repeated, tag = "11")]
     pub native_platform: ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
     #[prost(int32, optional, tag = "12")]
@@ -1475,9 +1425,7 @@ pub struct DeviceConfigurationProto {
     #[prost(int32, optional, tag = "13")]
     pub screen_height: ::core::option::Option<i32>,
     #[prost(string, repeated, tag = "14")]
-    pub system_supported_locale: ::prost::alloc::vec::Vec<
-        ::prost::alloc::string::String,
-    >,
+    pub system_supported_locale: ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
     #[prost(string, repeated, tag = "15")]
     pub gl_extension: ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
     #[prost(int32, optional, tag = "16")]
@@ -1742,9 +1690,8 @@ pub struct AppDetails {
     #[prost(message, repeated, tag = "22")]
     pub certificate_set: ::prost::alloc::vec::Vec<CertificateSet>,
     #[prost(string, repeated, tag = "23")]
-    pub auto_acquire_free_app_if_higher_version_available_tag: ::prost::alloc::vec::Vec<
-        ::prost::alloc::string::String,
-    >,
+    pub auto_acquire_free_app_if_higher_version_available_tag:
+        ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
     #[prost(bool, optional, tag = "24")]
     pub has_instant_link: ::core::option::Option<bool>,
     #[prost(string, repeated, tag = "25")]
@@ -1762,9 +1709,7 @@ pub struct AppDetails {
     #[prost(int32, optional, tag = "32")]
     pub target_sdk_version: ::core::option::Option<i32>,
     #[prost(string, optional, tag = "33")]
-    pub has_preregistration_promo_code: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub has_preregistration_promo_code: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(message, optional, tag = "34")]
     pub dependencies: ::core::option::Option<Dependencies>,
     #[prost(message, optional, tag = "35")]
@@ -1792,9 +1737,7 @@ pub struct AppDetails {
     #[prost(string, optional, tag = "67")]
     pub in_app_product: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "77")]
-    pub download_label_abbreviated: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub download_label_abbreviated: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "78")]
     pub download_label: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(message, optional, tag = "82")]
@@ -2100,9 +2043,7 @@ pub struct Item {
     #[prost(string, optional, tag = "22")]
     pub subtitle: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "23")]
-    pub translated_description_html: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub translated_description_html: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(bytes = "vec", optional, tag = "24")]
     pub server_logs_cookie: ::core::option::Option<::prost::alloc::vec::Vec<u8>>,
     #[prost(message, optional, tag = "25")]
@@ -2133,9 +2074,7 @@ pub struct ContentRating {
     #[prost(string, optional, tag = "1")]
     pub title: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "2")]
-    pub recommendation_and_description_html: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub recommendation_and_description_html: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(message, optional, tag = "3")]
     pub content_rating_image: ::core::option::Option<content_rating::ContentRatingImage>,
     #[prost(string, optional, tag = "5")]
@@ -2361,9 +2300,7 @@ pub struct Reason {
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ReasonPlusOne {
     #[prost(string, optional, tag = "1")]
-    pub localized_description_html: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub localized_description_html: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(message, repeated, tag = "3")]
     pub user_profile: ::prost::alloc::vec::Vec<UserProfile>,
 }
@@ -2377,9 +2314,7 @@ pub struct ReasonUserAction {
     #[prost(message, optional, tag = "1")]
     pub user_profile: ::core::option::Option<UserProfile>,
     #[prost(string, optional, tag = "2")]
-    pub localized_description_html: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub localized_description_html: ::core::option::Option<::prost::alloc::string::String>,
 }
 #[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
 pub struct Dismissal {
@@ -2434,9 +2369,7 @@ pub struct VideoAnnotations {
     #[prost(string, optional, tag = "3")]
     pub extras_content_list_url: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "4")]
-    pub also_available_in_list_url: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub also_available_in_list_url: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(message, repeated, tag = "5")]
     pub bundle_doc_id: ::prost::alloc::vec::Vec<DocId>,
 }
@@ -2603,9 +2536,8 @@ pub struct Availability {
     #[prost(message, optional, tag = "7")]
     pub rule: ::core::option::Option<Rule>,
     #[prost(group, repeated, tag = "9")]
-    pub perdeviceavailabilityrestriction: ::prost::alloc::vec::Vec<
-        availability::PerDeviceAvailabilityRestriction,
-    >,
+    pub perdeviceavailabilityrestriction:
+        ::prost::alloc::vec::Vec<availability::PerDeviceAvailabilityRestriction>,
     #[prost(bool, optional, tag = "13")]
     pub available_if_owned: ::core::option::Option<bool>,
     #[prost(message, repeated, tag = "14")]
@@ -2858,9 +2790,7 @@ pub struct AggregateRating {
     #[prost(string, optional, tag = "17")]
     pub rating_label: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "18")]
-    pub rating_count_label_abbreviated: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub rating_count_label_abbreviated: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "19")]
     pub rating_count_label: ::core::option::Option<::prost::alloc::string::String>,
 }
@@ -2956,9 +2886,7 @@ pub struct TocResponse {
     #[prost(message, optional, tag = "5")]
     pub experiments: ::core::option::Option<Experiments>,
     #[prost(string, optional, tag = "6")]
-    pub tos_checkbox_text_marketing_emails: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub tos_checkbox_text_marketing_emails: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "7")]
     pub tos_token: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(message, optional, tag = "8")]
@@ -3037,15 +2965,11 @@ pub struct Payload {
     #[prost(message, optional, tag = "24")]
     pub check_promo_offer_response: ::core::option::Option<CheckPromoOfferResponse>,
     #[prost(message, optional, tag = "25")]
-    pub instrument_setup_info_response: ::core::option::Option<
-        InstrumentSetupInfoResponse,
-    >,
+    pub instrument_setup_info_response: ::core::option::Option<InstrumentSetupInfoResponse>,
     #[prost(message, optional, tag = "26")]
     pub android_checkin_response: ::core::option::Option<AndroidCheckinResponse>,
     #[prost(message, optional, tag = "28")]
-    pub upload_device_config_response: ::core::option::Option<
-        UploadDeviceConfigResponse,
-    >,
+    pub upload_device_config_response: ::core::option::Option<UploadDeviceConfigResponse>,
     #[prost(message, optional, tag = "40")]
     pub search_suggest_response: ::core::option::Option<SearchSuggestResponse>,
     #[prost(message, optional, tag = "30")]
@@ -3057,33 +2981,24 @@ pub struct Payload {
     #[prost(message, optional, tag = "35")]
     pub check_iab_promo_response: ::core::option::Option<CheckIabPromoResponse>,
     #[prost(message, optional, tag = "36")]
-    pub user_activity_settings_response: ::core::option::Option<
-        UserActivitySettingsResponse,
-    >,
+    pub user_activity_settings_response: ::core::option::Option<UserActivitySettingsResponse>,
     #[prost(message, optional, tag = "37")]
-    pub record_user_activity_response: ::core::option::Option<
-        RecordUserActivityResponse,
-    >,
+    pub record_user_activity_response: ::core::option::Option<RecordUserActivityResponse>,
     #[prost(message, optional, tag = "38")]
     pub redeem_code_response: ::core::option::Option<RedeemCodeResponse>,
     #[prost(message, optional, tag = "39")]
     pub self_update_response: ::core::option::Option<SelfUpdateResponse>,
     #[prost(message, optional, tag = "41")]
-    pub get_initial_instrument_flow_state_response: ::core::option::Option<
-        GetInitialInstrumentFlowStateResponse,
-    >,
+    pub get_initial_instrument_flow_state_response:
+        ::core::option::Option<GetInitialInstrumentFlowStateResponse>,
     #[prost(message, optional, tag = "42")]
     pub create_instrument_response: ::core::option::Option<CreateInstrumentResponse>,
     #[prost(message, optional, tag = "43")]
     pub challenge_response: ::core::option::Option<ChallengeResponse>,
     #[prost(message, optional, tag = "44")]
-    pub backup_device_choices_response: ::core::option::Option<
-        BackDeviceChoicesResponse,
-    >,
+    pub backup_device_choices_response: ::core::option::Option<BackDeviceChoicesResponse>,
     #[prost(message, optional, tag = "45")]
-    pub backup_document_choices_response: ::core::option::Option<
-        BackupDocumentChoicesResponse,
-    >,
+    pub backup_document_choices_response: ::core::option::Option<BackupDocumentChoicesResponse>,
     #[prost(message, optional, tag = "46")]
     pub early_update_response: ::core::option::Option<EarlyUpdateResponse>,
     #[prost(message, optional, tag = "47")]
@@ -3103,19 +3018,13 @@ pub struct Payload {
     #[prost(message, optional, tag = "54")]
     pub get_user_settings_response: ::core::option::Option<GetUserSettingsResponse>,
     #[prost(message, optional, tag = "56")]
-    pub get_sharing_settings_response: ::core::option::Option<
-        GetSharingSettingsResponse,
-    >,
+    pub get_sharing_settings_response: ::core::option::Option<GetSharingSettingsResponse>,
     #[prost(message, optional, tag = "57")]
-    pub update_sharing_settings_response: ::core::option::Option<
-        UpdateSharingSettingsResponse,
-    >,
+    pub update_sharing_settings_response: ::core::option::Option<UpdateSharingSettingsResponse>,
     #[prost(message, optional, tag = "58")]
     pub review_snippets_response: ::core::option::Option<ReviewSnippetsResponse>,
     #[prost(message, optional, tag = "59")]
-    pub document_sharing_state_response: ::core::option::Option<
-        DocumentSharingStateResponse,
-    >,
+    pub document_sharing_state_response: ::core::option::Option<DocumentSharingStateResponse>,
     #[prost(message, optional, tag = "70")]
     pub module_delivery_response: ::core::option::Option<ModuleDeliveryResponse>,
     #[prost(message, optional, tag = "80")]
@@ -3428,9 +3337,7 @@ pub struct SearchSuggestEntry {
     #[prost(string, optional, tag = "6")]
     pub title: ::core::option::Option<::prost::alloc::string::String>,
     #[prost(message, optional, tag = "8")]
-    pub package_name_container: ::core::option::Option<
-        search_suggest_entry::PackageNameContainer,
-    >,
+    pub package_name_container: ::core::option::Option<search_suggest_entry::PackageNameContainer>,
 }
 /// Nested message and enum types in `SearchSuggestEntry`.
 pub mod search_suggest_entry {
@@ -3469,9 +3376,7 @@ pub struct LogRequest {
     #[prost(int64, optional, tag = "1")]
     pub timestamp: ::core::option::Option<i64>,
     #[prost(string, optional, tag = "2")]
-    pub download_confirmation_query: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub download_confirmation_query: ::core::option::Option<::prost::alloc::string::String>,
 }
 #[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
 pub struct TestingProgramRequest {
@@ -3492,9 +3397,7 @@ pub struct UploadDeviceConfigRequest {
 #[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
 pub struct UploadDeviceConfigResponse {
     #[prost(string, optional, tag = "1")]
-    pub upload_device_config_token: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub upload_device_config_token: ::core::option::Option<::prost::alloc::string::String>,
 }
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct AndroidCheckinRequest {
@@ -3566,9 +3469,7 @@ pub struct AndroidCheckinResponse {
     #[prost(string, repeated, tag = "10")]
     pub delete_setting: ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
     #[prost(string, optional, tag = "12")]
-    pub device_checkin_consistency_token: ::core::option::Option<
-        ::prost::alloc::string::String,
-    >,
+    pub device_checkin_consistency_token: ::core::option::Option<::prost::alloc::string::String>,
 }
 #[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
 pub struct GservicesSetting {
