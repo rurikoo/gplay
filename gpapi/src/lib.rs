@@ -118,7 +118,7 @@ use googleplay_protobuf::{
     UploadDeviceConfigResponse,
 };
 
-use bincode::{Decode, Encode};
+use wincode::{SchemaRead, SchemaWrite};
 include!("snippets/device_properties.rs");
 
 static DEVICES_ENCODED: &[u8] = include_bytes!("device_properties.bin");
@@ -153,18 +153,16 @@ pub struct Gpapi {
 
 impl Gpapi {
     /// Returns a Gpapi struct.
-    ///
     pub fn new<S: Into<String>>(device_codename: S, email: S) -> Self {
+        let codename: String = device_codename.into();
         Gpapi {
             locale: String::from("en_US"),
             timezone: String::from("UTC"),
-            device_properties: bincode::borrow_decode_from_slice::<
-                HashMap<String, EncodedDeviceProperties>,
-                bincode::config::Configuration,
-            >(DEVICES_ENCODED, bincode::config::standard())
+            device_properties: wincode::deserialize::<HashMap<String, EncodedDeviceProperties>>(
+                DEVICES_ENCODED,
+            )
             .unwrap()
-            .0
-            .remove(&device_codename.into())
+            .remove(&codename)
             .expect("Invalid device codename")
             .into_decoded(),
             email: email.into(),

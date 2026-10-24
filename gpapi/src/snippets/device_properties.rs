@@ -1,4 +1,4 @@
-#[derive(Encode, Decode, Debug)]
+#[derive(SchemaWrite, SchemaRead, Debug)]
 struct EncodedDeviceProperties {
     pub device_configuration: Vec<u8>,
     pub android_checkin: Vec<u8>,

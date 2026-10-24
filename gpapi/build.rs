@@ -10,7 +10,7 @@ use googleplay_protobuf::{
     AndroidBuildProto, AndroidCheckinProto, DeviceConfigurationProto, DeviceFeature,
 };
 
-use bincode::{Decode, Encode};
+use wincode::{SchemaRead, SchemaWrite};
 include!("src/snippets/device_properties.rs");
 
 fn main() {
@@ -20,15 +20,13 @@ fn main() {
             .read(fs::read_to_string("device.properties").unwrap())
             .unwrap();
 
-        let mut device_properties_map = HashMap::new();
+        let mut device_properties_map: HashMap<String, EncodedDeviceProperties> = HashMap::new();
         for section in config.sections() {
-            let device_properties_encoded =
-                DeviceProperties::parse(&config, &section).into_encoded();
-            device_properties_map.insert(section, device_properties_encoded);
+            let encoded = DeviceProperties::parse(&config, &section).into_encoded();
+            device_properties_map.insert(section, encoded);
         }
 
-        let devices_encoded: Vec<u8> =
-            bincode::encode_to_vec(&device_properties_map, bincode::config::standard()).unwrap();
+        let devices_encoded: Vec<u8> = wincode::serialize(&device_properties_map).unwrap();
 
         let mut file = File::create("src/device_properties.bin").unwrap();
         file.write_all(&devices_encoded).unwrap();

@@ -18,7 +18,7 @@ prost = "0.14"
 reqwest = { version = "0.13", features = ["native-tls-no-alpn"] }
 bytes = "1"
 googleplay-protobuf = "3"
-bincode = "2"
+wincode = { version = "0.6.3", features = ["derive"] }
 futures = "0.3"
 tokio-dl-stream-to-disk = "1"
 serde = { version = "1", features = ["derive"] }
@@ -27,7 +27,7 @@ configparser = "3"
 [build-dependencies]
 googleplay-protobuf = "3"
 prost = "0.14"
-bincode = "2"
+wincode = { version = "0.6.3", features = ["derive"] }
 configparser = "3"
 serde = { version = "1", features = ["derive"] }
 bytes = "1"
