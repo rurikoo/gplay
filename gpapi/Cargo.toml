@@ -33,4 +33,4 @@ serde = { version = "1", features = ["derive"] }
 bytes = "1"
 
 [dev-dependencies]
-tokio = { version = "1", features = ["full"] }
+tokio = { version = "=1.54.1", features = ["full"] }
